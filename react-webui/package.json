@@ -1,0 +1,76 @@
+{
+    "name": "react-webui",
+    "version": "0.0.1",
+    "description": "React WebUI fraction of HQ20 dapp boilerplate.",
+    "license": "Apache-2.0",
+    "author": {
+        "name": "TechHQ",
+        "github": "hq20",
+        "email": "admin@techhq.io",
+        "url": "https://techhq.io"
+    },
+    "engines": {
+        "node": ">= 10.20.1",
+        "npm": ">= 6.14.0",
+        "yarn": ">= 1.15.2"
+    },
+    "scripts": {
+        "start": "react-scripts start",
+        "build": "react-scripts build",
+        "eject": "react-scripts eject",
+        "test": "jest --testTimeout 20000",
+        "test:ci": "CI=true jest --testTimeout 20000 --env=jsdom",
+        "lint": "eslint 'src/**/*.{tsx,ts}'",
+        "coverage": "jest --testTimeout 20000 --env=jsdom --coverage",
+        "coverage:ci": "CI=true jest --testTimeout 20000 --env=jsdom --coverage && cat coverage/lcov.info | coveralls",
+        "debug:chrome": "google-chrome --remote-debugging-port=9222",
+        "docs": "typedoc --out docs ./src"
+    },
+    "dependencies": {
+        "ethers": "4.0.47",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-router-dom": "5.2.0"
+    },
+    "devDependencies": {
+        "@testing-library/dom": "7.5.7",
+        "@testing-library/jest-dom": "4.2.4",
+        "@testing-library/react": "9.3.2",
+        "@testing-library/user-event": "7.1.2",
+        "@types/enzyme": "3.10.5",
+        "@types/enzyme-adapter-react-16": "1.0.6",
+        "@types/jest": "24.0.0",
+        "@types/node": "12.0.0",
+        "@types/react": "16.9.0",
+        "@types/react-dom": "16.9.0",
+        "@types/react-router-dom": "5.1.5",
+        "@typescript-eslint/eslint-plugin": "2.34.0",
+        "@typescript-eslint/eslint-plugin-tslint": "2.34.0",
+        "@typescript-eslint/parser": "2.34.0",
+        "coveralls": "3.1.0",
+        "delay": "4.3.0",
+        "enzyme": "3.11.0",
+        "enzyme-adapter-react-16": "1.15.2",
+        "eslint": "^6.6.0",
+        "jest": "24.9.0",
+        "react": "16.13.1",
+        "react-dom": "16.13.1",
+        "react-scripts": "3.4.1",
+        "ts-jest": "24.3.0",
+        "tslint": "6.1.2",
+        "typedoc": "0.16.3",
+        "typescript": "~3.7.2"
+    },
+    "browserslist": {
+        "production": [
+            ">0.2%",
+            "not dead",
+            "not op_mini all"
+        ],
+        "development": [
+            "last 1 chrome version",
+            "last 1 firefox version",
+            "last 1 safari version"
+        ]
+    }
+}
