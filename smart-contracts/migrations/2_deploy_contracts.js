@@ -3,5 +3,5 @@ const TPLIssuance = artifacts.require('./TPLIssuance.sol');
 
 module.exports = async (deployer, network, accounts) => {
     await deployer.deploy(ThePromisedLand);
-    await deployer.deploy(TPLIssuance, ThePromisedLand.address);
+    // await deployer.deploy(TPLIssuance, ThePromisedLand.address);
 }

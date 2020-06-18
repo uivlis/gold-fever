@@ -21,9 +21,7 @@
 // const fs = require('fs');
 const HDWalletProvider = require('@truffle/hdwallet-provider');
 require('ts-node/register');
-
-const infuraKey = 'fj4jll3k.....';
-const mnemonic = ''; // fs.readFileSync('.secret').toString().trim();
+require('dotenv').config();
 
 module.exports = {
     test_file_extension_regexp: /.*\.ts$/,
@@ -61,9 +59,9 @@ module.exports = {
 
         // Useful for deploying to a public network.
         // NB: It's important to wrap the provider as a function.
-        goerli: {
-            provider: () => new HDWalletProvider(mnemonic, `https://goerli.infura.io/v3/${infuraKey}`),
-            network_id: 5, // Ropsten's id
+        rinkeby: {
+            provider: () => new HDWalletProvider(process.env.MNEMONIC, `https://rinkeby.infura.io/v3/${process.env.INFURA_KEY}`),
+            network_id: 4, // Rinkeby's id
             confirmations: 2, // # of confs to wait between deployments. (default: 0)
             timeoutBlocks: 200, // # of blocks before a deployment times out  (minimum/default: 50)
         },
