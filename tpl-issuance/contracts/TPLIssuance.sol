@@ -1,6 +1,7 @@
-pragma solidity ^0.6.0;
+pragma solidity 0.6.0;
 
 import "@hq20/contracts/contracts/issuance/IssuanceEth.sol";
+import "@hq20/contracts/contracts/token/IERC20Mintable.sol";
 import "@openzeppelin/contracts/presets/ERC20PresetMinterPauser.sol";
 
 /**
@@ -32,7 +33,7 @@ contract TPLIssuance is IssuanceEth {
         );
         uint256 amount = investments[msg.sender];
         investments[msg.sender] = 0;
-        ERC20PresetMinterPauser _issuanceToken = ERC20PresetMinterPauser(
+        IERC20Mintable _issuanceToken = IERC20Mintable(
             issuanceToken
         );
         _issuanceToken.mint(

@@ -1,0 +1,5 @@
+Migrations deployed at:
+`0x55AeAf7E095B47AAdED01Bd78ef5A2Ce9f846559`
+
+ThePromisedLand deployed at:
+`0xE850436722A796FaE8884D64619544A4A049d8a4`
