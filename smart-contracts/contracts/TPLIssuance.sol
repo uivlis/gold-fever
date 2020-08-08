@@ -2,8 +2,8 @@ pragma solidity ^0.6.0;
 
 
 /**
- * @dev The Promised Land Issuance
+ * @dev NGL Issuance
  */
-contract TPLIssuance {
-    // TODO: crate the issuance contract
+contract NGLIssuance {
+    // TODO: crate the issuance contract (ICO)
 }

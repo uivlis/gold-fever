@@ -20,6 +20,12 @@ To deploy the contracts, a network is required. Using this workspace, you have t
 
 ### Deploy smart contracts
 
+Before migrating, don't forget to:
+```
+cp .env.example .env
+```
+and edit the keys in .env, especially this one: `NGL_MIGRATE_URI`.
+
 There are many ways to deploy the contracts. While using this workspace, we recomment to confugire the network in *truffle-config.js* and then deploy with truffle (eg. `npx truffle migrate --network <network name>`). If you are running a local network with `yarn start:ganache:local`, then you can deploy with `yarn deploy:ganache:local`.
 
 ### All available commands

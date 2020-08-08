@@ -37,11 +37,10 @@
     },
     "dependencies": {
         "@hq20/contracts": "^0.0.6",
-        "@openzeppelin/contracts": "3.0.1",
+        "@openzeppelin/contracts": "^3.1.0",
         "@openzeppelin/contracts-ethereum-package": "3.0.0",
         "@openzeppelin/upgrades": "2.8.0",
-        "dotenv": "^8.2.0",
-        "erc-1155": "github:enjin/erc-1155"
+        "dotenv": "^8.2.0"
     },
     "devDependencies": {
         "@codechecks/client": "0.1.10",
