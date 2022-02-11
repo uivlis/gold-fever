@@ -37,7 +37,7 @@
     },
     "dependencies": {
         "@hq20/contracts": "^0.0.6",
-        "@openzeppelin/contracts": "^3.1.0",
+        "@openzeppelin/contracts": "^4.4.2",
         "@openzeppelin/contracts-ethereum-package": "3.0.0",
         "@openzeppelin/upgrades": "2.8.0",
         "dotenv": "^8.2.0"
